@@ -3,7 +3,7 @@ vowel = ["a", "ı", "o", "u", "e", "i", "ö", "ü"]
 
 
 def parser(word):
-    spell = [i for i in word]
+    spell = list(word)
     vowel_count = sum([1 for i in spell if i in vowel])
     lenght = len(word)
 
